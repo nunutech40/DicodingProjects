@@ -1,0 +1,6 @@
+framework module Pods_TestingChartGrafik_TestingChartGrafikUITests {
+  umbrella header "Pods-TestingChartGrafik-TestingChartGrafikUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

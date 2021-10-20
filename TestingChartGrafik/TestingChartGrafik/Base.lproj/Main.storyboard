@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestingChartGrafik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cso-fq-Fns" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="104" width="414" height="223"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="7eT-SS-iD6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cso-fq-Fns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G4s-dC-jpi"/>
+                            <constraint firstItem="cso-fq-Fns" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jkb-id-E2R"/>
+                            <constraint firstItem="cso-fq-Fns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="y42-dN-qNZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="cso-fq-Fns" id="dSG-Qq-HkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="78"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="T8m-mE-yxm">
+            <objects>
+                <viewController id="DxD-r4-pGQ" customClass="HomeViewController" customModule="TestingChartGrafik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spV-EX-ooc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0S-n9-O2H">
+                                <rect key="frame" x="0.0" y="44" width="375" height="111"/>
+                                <color key="backgroundColor" red="1" green="0.41568627450980389" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="tEZ-O6-hO7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tTk-6a-GgY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s0S-n9-O2H" firstAttribute="top" secondItem="tTk-6a-GgY" secondAttribute="top" id="UEa-Fg-JfW"/>
+                            <constraint firstItem="s0S-n9-O2H" firstAttribute="leading" secondItem="tTk-6a-GgY" secondAttribute="leading" id="Utt-zz-S2e"/>
+                            <constraint firstItem="tTk-6a-GgY" firstAttribute="trailing" secondItem="s0S-n9-O2H" secondAttribute="trailing" id="gpg-OC-iU6"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhA-1y-q6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

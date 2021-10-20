@@ -1,0 +1,6 @@
+framework module Pods_SubmissionDicodingSwiftUI {
+  umbrella header "Pods-SubmissionDicodingSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,36 @@
+excluded:
+- Carthage
+- Packages
+- Pods
+
+disabled_rules: # rule identifiers to exclude from running
+- valid_docs   # /// is valid and used by Xcode
+- cyclomatic_complexity
+- identifier_name
+- syntactic_sugar
+- type_body_length
+- function_body_length
+- file_length
+- vertical_parameter_alignment
+- function_parameter_count
+- implicit_getter
+- force_try
+- shorthand_operator
+- type_name
+- large_tuple
+- trailing_whitespace
+- opening_brace
+- colon
+- comma
+- todo
+- empty_parentheses_with_trailing_closure
+- unneeded_break_in_switch
+- unused_closure_parameter
+- closure_parameter_position
+- switch_case_alignment
+
+line_length: 270
+
+type_name:
+min_length: 2
+
